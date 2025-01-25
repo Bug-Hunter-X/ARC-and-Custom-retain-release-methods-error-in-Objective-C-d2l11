@@ -1,0 +1,5 @@
+# Objective-C ARC and Custom retain/release methods error
+This repository demonstrates a potential error in Objective-C related to memory management when using custom retain and release methods alongside Automatic Reference Counting (ARC).  Improperly implemented custom retain/release methods can lead to memory leaks, crashes (double-free errors), or unexpected behavior. The provided code illustrates a problematic scenario and its resolution.  Note that using custom retain/release methods is generally discouraged unless strictly necessary for interoperability with legacy code or very specific performance optimizations. It's crucial to understand the nuances of ARC before implementing custom memory management. 
+
+## Bug Description
+The bug occurs when the custom `retain` and `release` methods in the `MyObject` class don't correctly manage the reference count.  The code in `bug.m` shows this problem. This can lead to memory corruption and crashes. 
